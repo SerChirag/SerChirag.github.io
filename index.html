@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<title>Fullscreen Slit Slider with CSS3 and jQuery</title>
+
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/custom.css" />
+<link rel="stylesheet" type="text/css" href="css/input.css" />
+<script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
+<noscript>
+<link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
+</noscript>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src = "script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="magic-master/magic.css">
+<script type="text/javascript" src = "chirag.js"></script>
+<link rel="stylesheet" type="text/css" href="css/component.css" />
+<script src="js/classie.js"></script>
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/modalwa.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/set1.css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" type="text/css" href="magic-master/magic.css">
+<link rel="stylesheet" type="text/css" href="css/aboutme.css" />
+<link rel="stylesheet" type="text/css" href="css/fxtransparent.css" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/buttons.css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+<script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
+<script type="text/javascript" src="js/jquery.slitslider.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
+
+<head>
+  <div class="wrapper">
+  <article class="modalwa-contents">
+
+    <header>
+      <nav id='bossnav'>
+        <div id='head'>
+          <span id='navtext' class="movetext">Company Name</span>
+          <style type="text/css">
+            #navtext{
+              top: -30px;
+            }
+          </style>
+          <img id="navimg" src="https://www.matchbook.com/assets/images/icons/white/Twitter_logo_white.png">
+          <a href="#portion1" id="linknav1" class='linknav'>HOME</a>
+          <a href="#portion2" id="linknav2" class='linknav' >CODE</a>
+          <a href="#portion3" id="linknav3" class='linknav' >CREATE</a>
+          <a href="#portion4" id="linknav4" class='linknav' >COMMUNICATE</a>
+          <form id="inputsearch" style="display:inline!important;">
+            <input id="babe" type="search" placeholder="Search">
+          </form>
+          
+        </div>
+      </nav>
+    </header>
+</head>
+
+<body>
+
+  <div id = "slidercont" class="container demo-1">
+
+    <div id="slider" class="sl-slider-wrapper">
+
+      <div class="sl-slider">
+          
+        <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+          <div class="sl-slide-inner">
+            <div class="deco" data-icon="H"></div>
+            <h2>A bene placito</h2>
+            <blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
+          </div>
+        </div>
+            
+        <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+          <div class="sl-slide-inner">
+            <div class="deco" data-icon="q"></div>
+            <h2>Regula aurea</h2>
+            <blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
+          </div>
+        </div>
+            
+        <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco" data-icon="O"></div>
+            <h2>Dum spiro, spero</h2>
+            <blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
+          </div>
+        </div>
+        
+        <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco" data-icon="I"></div>
+            <h2>Donna nobis pacem</h2>
+            <blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
+          </div>
+        </div>
+            
+        <div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+          <div class="sl-slide-inner">
+            <div class="deco" data-icon="t"></div>
+            <h2>Acta Non Verba</h2>
+            <blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
+          </div>
+        </div>
+      </div><!-- /sl-slider -->
+          
+      <nav id="nav-arrows" class="nav-arrows">
+        <span class="nav-arrow-prev">Previous</span>
+        <span class="nav-arrow-next">Next</span>
+      </nav>
+
+      <nav id="nav-dots" class="nav-dots">
+        <span class="nav-dot-current"></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </nav>
+
+    </div><!-- /slider-wrapper -->
+
+  </div>
+
+
+  <div id='blank'>
+    <script type="text/javascript">
+      $("#blank").css('height', $("#slidercont").height() + "px");
+    </script>
+  </div>
+
+    <div>
+    	<h1 class="headline">Featured Posts</h1>
+    </div>
+
+    <div class="containerp">
+      <div id='pseudo1' class="portion two">      
+        <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+          <path d="M0 0 L50 100 L100 0 " />
+        </svg>
+      </div>
+      <div class="portion two" >
+          
+          <section class="col-3">
+            <div class="column">
+              <span class="icon"></span>  
+            </div>
+
+            <div class="column">
+              <span class="icon"></span>            
+            </div>
+
+            <div class="column">
+              <span class="icon"></span>
+            </div>
+          </section>  
+      </div>
+     
+
+      <div id='pseudo2' class="portion two">
+        <svg id="bigTriangleColor2" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
+          <path d="M0 102 L50 0 L100 102  " />
+        </svg>
+      </div>
+             
+    </div>
+    
+    <div class="containera">
+        <h1 class="headline">About Me</h1>             
+        <div id="component" class="component component-transparent">
+          <ul class="itemwrap">
+            <li id="1" class="current"><img src="img/cold.png" alt="coldplay"/></li>
+            <li id="2"><img src="img/am2.png" alt="arctic monkeys"/></li>
+            <li id="3"><img src="img/got.png" alt="game of thrones"/></li>
+            <li id="4"><img src="img/wonderland.png" alt="star wars"/></li>
+            <li id="5"><img src="img/rma.png" alt="Real Madrid"/></li>
+            <li id="6"><img src="img/steve.png" alt="Stephen Colbert"/></li>
+            <li id="7"><img src="img/bb.png" alt="Breaking Bad"/></li>
+            <li id="8"><img src="img/mona.png" alt="Oil Painting"/></li>
+            <li id="9"><img src="img/uiux1.png" alt="UI/UX Development"/></li>
+            <li id="10"><img src="img/de.png" alt="Designing"/></li>
+            <li id="11"><img src="img/web.png" alt="Web Development"/></li>
+            <li id="12"><img src="img/py.png" alt="Python"/></li>
+            <li id="13"><img src="img/or.png" alt="One Republic"/></li>
+            <li id="14"><img src="img/mandi.png" alt="Mandi"/></li>
+            <li id="15"><img src="img/poet.png" alt="Poetry"/></li>
+            <li id="16"><img src="img/mitch.png" alt="Mitch Albom"/></li>
+            <li id="17"><img src="img/sher.png" alt="Sherlock"/></li>
+            <li id="18"><img src="img/delhi.png" alt="Delhi"/></li>
+            <li id="19"><img src="img/Doha.png" alt="Doha"/></li>
+            <li id="20"><img src="img/me.png" alt="chirag"/></li>
+          </ul>
+        </div>
+      <div class='aboutmetext'>
+
+          <p>Hi! My Name is <span id="rest20" class="aboutlink">Chirag</span>.<br>It is pronounced "Chirag" and spelled something like this :<br>
+          <br>
+
+          <div class="syn">"C" as in "Kool"</div> 
+          <div class="syn">"H" as in "Handsum"</div>
+          <div class="syn">"I" as in "Entelligent"</div> 
+          <div class="syn">"R" as in "Responsibull"</div> 
+          <div class="syn">"A" as in "Owesome"</div> 
+          <div class="syn">"G" as in "Grammer & Spelings Proficiency"</div>
+          
+          <br>Please Note: Not to be confused with Chirag Delhi, Chirag Computers, Chirag Constructions, Chirag(1969 film), Chirag NGO for Rural Development, Chirag United F.C, Chirag Gupta or Ryan Gosling.
+          </p>
+          <br>
+          <div>WHERE I LIVE : <span id="rest18" class="aboutlink">Delhi</span>,<span id="rest19" class="aboutlink"> Doha</span>,<span id="rest14" class="aboutlink"> Mandi</span>,<span id="rest4" class="aboutlink"> Wonderland</span></div>
+          <div>MOTHER TONGUE : <span id="rest12" class="aboutlink">Python </span></div>
+          <div>WHAT I LISTEN TO: <span id="rest1" class="aboutlink">Coldplay</span>, <span id="rest2" class="aboutlink">The Arctic Monkeys </span>, <span id="rest13" class="aboutlink">One Republic </span></div>
+          <div>WHAT I DO : <span id="rest9" class="aboutlink">UI/UX Development</span>, <span id="rest11" class="aboutlink">Web Development</span>, <span id="rest10" class="aboutlink">Designing</span>, <span id="rest15" class="aboutlink">Poetry </span>, <span id="rest8" class="aboutlink">Oil Painting </span></div>
+          <div>WHAT I WATCH : <span id="rest3" class="aboutlink">Game of Thrones</span>, <span id="rest7" class="aboutlink">Breaking Bad</span>, <span id="rest17" class="aboutlink">Sherlock</span>, <span id="rest6" class="aboutlink">Stephen Colbert </span> </div>
+          <div>ALLEGIANCES: <span id="rest5" class="aboutlink">Real Madrid </span></div>
+                          
+          <div>FAVOURITE AUTHOR: <span id="rest16" class="aboutlink">Mitch Albom </span></div>
+          
+               
+
+      <div class="resume">
+          
+          <button class="button button--resumebutton button--border-thick button--text-upper button--size-s">RESUME</button>
+        </div>
+        
+      
+        <div class="poppy">
+          
+          <button class="button button--poppybutton button--border-thick button--inverted button--text-upper button--size-s" onclick="javascript:openDialog();">CONTACT ME</button>
+        </div>
+      
+    </div>
+    </div>
+    <br/>
+    <br/>
+
+    <div id="potato9gag">
+      <div id="potatotext">
+        <div class="blockquotediv">
+          <blockquote class="potatoquote">
+            <p>
+              Sorry for the long page.
+            </p>
+          </blockquote>
+        </div>
+        <div class="blockquotediv">
+          <blockquote class="potatoquote">
+            <p>Here's a potato.</p>
+          </blockquote>
+        </div>
+      </div>
+
+      <div id="potatosection">
+        <div id="potatocontainer"></div>
+      </div>
+    
+  </div>
+
+  </article>
+  <div class="modalwa-cover"></div>
+
+
+    <aside id="default-popup" class="modalwa-popup">
+      <div class="containerm">
+        <br />
+        <h1 id="modalwaheading">Contact Me</h1>
+        <br />
+        <br />
+        <div id="modalinput1" class="input input--jaime">
+          <input id='modaltext1' class="input__field input__field--jaime" type="text"  />
+          <label id = 'modallabel1' class="input__label input__label--jaime" for='modaltext1'>
+            <svg id='modalline1' class="graphic graphic--jaime" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
+              <path d="m0,0l404,0l0,77l-404,0l0,-77z"/>
+            </svg>
+            <div class="input__label-content input__label-content--jaime">Name</div>
+          </label>
+        </div>
+        <br />      
+        <div id="modalinput2" class="input input--jaime">
+          <input id='modaltext2' class="input__field input__field--jaime" type="text"  />
+          <label id = 'modallabel2' class="input__label input__label--jaime" for='modaltext2'>
+            <svg id='modalline2' class="graphic graphic--jaime" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
+              <path d="m0,0l404,0l0,77l-404,0l0,-77z"/>
+            </svg>
+            <div class="input__label-content input__label-content--jaime">Email</div>
+          </label>
+        </div >
+        <br />
+        <div id="modalinput3" class="input input--jaime">
+          <input id='modaltext3' class="input__field input__field--jaime" type="text"  />
+          <label id = 'modallabel3' class="input__label input__label--jaime" for='modaltext3'>
+            <svg id='modalline3'class="graphic graphic--jaime" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
+              <path d="m0,0l404,0l0,77l-404,0l0,-77z"/>
+            </svg>
+            <div class="input__label-content input__label-content--jaime">Phone Number</div>
+          </label>
+        </div>
+      
+        <br />
+        <br />    
+
+        <button id='modalinside' onclick="javascript:closeDialog();" class="button button--rayen button--border-medium button--text-thin button--size-l button--inverted" data-text="SUBMIT"><span>SUBMIT</span></button>
+      </div>      
+    </aside>
+    </div>
+    <div class="footer">HI MUM, I'M A FOOTER!</div>
+  <script type="text/javascript">
+  	$(document).ready(function($) {
+
+  $(window).on('scroll', function() {
+
+    //ADD .TIGHT
+    if ($(window).scrollTop() + $(window).height() > $('.wrapper').outerHeight()) {
+      $('body').addClass('tight');
+    } else {
+      $('body').removeClass('tight');
+    }
+  });
+
+  //BACK TO PRESENTATION MODE
+  $("html").on("click", "body.tight .wrapper", function() {
+    $('html, body').animate({
+      scrollTop: $('.wrapper').outerHeight() - $(window).height()
+    }, 500);
+  });
+
+});
+  </script>
+  <script type="text/javascript" src="js/potato.js"></script>    
+  <script type="text/javascript" src="js/modalwa.js"></script>
+  <script type="text/javascript" src="js/juicy.js"></script>
+
+  <script src="js/aboutme.js"></script>
+  
+  
+</body>
+
+
+</html>
