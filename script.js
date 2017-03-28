@@ -123,9 +123,10 @@ $(document).scroll(function () {
 
   var scrollPosA = $('.component').scrollTop() ;
   var heightwaA = $('.component').height();
+  console.log(scrollPosA);
  
   $('.itemwrap').css({'top': (scrollPosA)});
-  console.log(scrollPosA);
+  console.log(scrollPos);
 
   
   // changing padding of nav a on scroll

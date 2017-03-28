@@ -3,28 +3,29 @@
 .wrapper {
   
   transform-origin: center bottom 0px;
-  transition: all 0.5s ease 0s;
-  box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.5);
+  transition: all 0.7s ease 0s;
+  box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.2);
 }
 
 body.tight .wrapper {
-  transform: translateY(-60px) scale(0.9);
+  transform: translateY(-30px) scale(0.95);
   cursor: pointer;
 }
 
-.footer {
-  width: 90%;
-  max-width: 1440px;
-  margin: 0px auto;
-  text-align: center;
-  min-height: 200px;
-  font-weight: bold;
-  color: #FFF;
-  font-size: 2.125rem;
-  font-family: "Raleway", sans-serif;
-  padding-top: 40px;
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
 }
 
+/* line 9, ../scss/_mixins.scss */
+::-webkit-scrollbar-thumb {
+  background: #333;
+}
+
+/* line 13, ../scss/_mixins.scss */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
 
 #head{
   background-color: none;
@@ -141,7 +142,7 @@ footer.info {
 #navimg{
   position: !important; z-index: 9999 !important;
   z-index: 1000;
-  height: 2.5em;
+  height: 5em;
   position: absolute;
   left: 13px;
   top: 13px;

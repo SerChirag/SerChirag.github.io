@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<title>Fullscreen Slit Slider with CSS3 and jQuery</title>
-
+<title>Chirag Vashist</title>
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/icons.css" />
 <link rel="stylesheet" type="text/css" href="css/demo.css" />
-<link rel="stylesheet" type="text/css" href="css/style.css" />
-<link rel="stylesheet" type="text/css" href="css/custom.css" />
-<link rel="stylesheet" type="text/css" href="css/input.css" />
+<link rel="stylesheet" type="text/css" href="css/slideshow_ext.css" />
+<link rel="stylesheet" type="text/css" href="css/landing_slideshow.css" />
+<link rel="stylesheet" type="text/css" href="css/input_search.css" />
 <script type="text/javascript" src="js/modernizr.custom.79639.js"></script>
 <noscript>
 <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
@@ -15,7 +17,6 @@
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script type="text/javascript" src = "script.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -24,39 +25,57 @@
 <link rel="stylesheet" type="text/css" href="css/component.css" />
 <script src="js/classie.js"></script>
 <link rel="stylesheet" href="css/demo.css">
+<link rel="shortcut icon" href="favicon.ico">
 <link rel="stylesheet" href="css/modalwa.css">
 <link rel="stylesheet" type="text/css" href="css/demo.css" />
-<link rel="stylesheet" type="text/css" href="css/set1.css" />
+<link rel="stylesheet" type="text/css" href="css/contact_input.css" />
 <link rel="stylesheet" type="text/css" href="css/animate.css">
 <link rel="stylesheet" type="text/css" href="magic-master/magic.css">
 <link rel="stylesheet" type="text/css" href="css/aboutme.css" />
-<link rel="stylesheet" type="text/css" href="css/fxtransparent.css" />
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/aboutme_slideshow.css" />
 <link rel="stylesheet" type="text/css" href="css/buttons.css" />
-<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+<link rel="shortcut icon" href="logos/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="logos/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="logos/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="logos/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="logos/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="logos/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="logos/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="logos/favicon-16.png">
+  <link rel="apple-touch-icon" href="logos/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="logos/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="logos/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="logos/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="logos/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="logos/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="logos/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="logos/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="logos/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#FFFFFF">
+  <meta name="msapplication-TileImage" content="logos/favicon-144.png">
+  <meta name="msapplication-config" content="/browserconfig.xml">
 <script type="text/javascript" src="js/jquery.ba-cond.min.js"></script>
 <script type="text/javascript" src="js/jquery.slitslider.js"></script>
 <script type="text/javascript" src="js/slider.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.4.1/snap.svg-min.js"></script>
 
+<div class="wrapper">
 <head>
-  <div class="wrapper">
+  
   <article class="modalwa-contents">
 
     <header>
       <nav id='bossnav'>
         <div id='head'>
-          <span id='navtext' class="movetext">Company Name</span>
+          <span id='navtext' class="movetext">Chirag Vashist</span>
           <style type="text/css">
             #navtext{
               top: -30px;
             }
           </style>
-          <img id="navimg" src="https://www.matchbook.com/assets/images/icons/white/Twitter_logo_white.png">
+          <img id="navimg" src="img/logo.svg">
           <a href="#portion1" id="linknav1" class='linknav'>HOME</a>
           <a href="#portion2" id="linknav2" class='linknav' >CODE</a>
           <a href="#portion3" id="linknav3" class='linknav' >CREATE</a>
@@ -142,6 +161,8 @@
       $("#blank").css('height', $("#slidercont").height() + "px");
     </script>
   </div>
+  	<br>
+  	<br>
 
     <div>
     	<h1 class="headline">Featured Posts</h1>
@@ -157,15 +178,24 @@
           
           <section class="col-3">
             <div class="column">
-              <span class="icon"></span>  
+              <div class="icon">
+	              <p class="decorative-big"><span class="counter">34</span></p>
+	              <p class="decorative">POSTS</p>
+              </div>  
             </div>
 
             <div class="column">
-              <span class="icon"></span>            
+              <div class="icon">
+	              <p class="decorative-big"><span class="counter">145</span></p>
+	              <p class="decorative">VISITORS</p>
+              </div>            
             </div>
 
             <div class="column">
-              <span class="icon"></span>
+              <div class="icon">
+	              <p class="decorative-big"><span class="counter">1000</span></p>
+	              <p class="decorative">VIEWS</p>
+              </div>
             </div>
           </section>  
       </div>
@@ -183,69 +213,78 @@
         <h1 class="headline">About Me</h1>             
         <div id="component" class="component component-transparent">
           <ul class="itemwrap">
-            <li id="1" class="current"><img src="img/cold.png" alt="coldplay"/></li>
-            <li id="2"><img src="img/am2.png" alt="arctic monkeys"/></li>
-            <li id="3"><img src="img/got.png" alt="game of thrones"/></li>
-            <li id="4"><img src="img/wonderland.png" alt="star wars"/></li>
-            <li id="5"><img src="img/rma.png" alt="Real Madrid"/></li>
-            <li id="6"><img src="img/steve.png" alt="Stephen Colbert"/></li>
-            <li id="7"><img src="img/bb.png" alt="Breaking Bad"/></li>
-            <li id="8"><img src="img/mona.png" alt="Oil Painting"/></li>
-            <li id="9"><img src="img/uiux1.png" alt="UI/UX Development"/></li>
-            <li id="10"><img src="img/de.png" alt="Designing"/></li>
+          	<li id="1" class="current"><img src="img/me.png" alt="chirag"/></li>
+          	<li id="2"><img src="img/delhi.png" alt="Delhi"/></li>
+            <li id="3"><img src="img/Doha.png" alt="Doha"/></li>
+            <li id="4"><img src="img/mandi.png" alt="Mandi"/></li>
+            <li id="5"><img src="img/wonderland.png" alt="wonderland"/></li>
+            <li id="6"><img src="img/py.png" alt="Python"/></li>
+            <li id="7"><img src="img/cold.png" alt="coldplay"/></li>
+            <li id="8"><img src="img/am2.png" alt="arctic monkeys"/></li>
+            <li id="9"><img src="img/or.png" alt="One Republic"/></li>
+            <li id="10"><img src="img/uiux1.png" alt="UI/UX Development"/></li>
             <li id="11"><img src="img/web.png" alt="Web Development"/></li>
-            <li id="12"><img src="img/py.png" alt="Python"/></li>
-            <li id="13"><img src="img/or.png" alt="One Republic"/></li>
-            <li id="14"><img src="img/mandi.png" alt="Mandi"/></li>
-            <li id="15"><img src="img/poet.png" alt="Poetry"/></li>
-            <li id="16"><img src="img/mitch.png" alt="Mitch Albom"/></li>
+            <li id="12"><img src="img/de.png" alt="Designing"/></li>
+            
+            <li id="13"><img src="img/poet.png" alt="Poetry"/></li>
+            <li id="14"><img src="img/mona.png" alt="Oil Painting"/></li>
+            <li id="15"><img src="img/got.png" alt="game of thrones"/></li>
+            <li id="16"><img src="img/bb.png" alt="Breaking Bad"/></li>
             <li id="17"><img src="img/sher.png" alt="Sherlock"/></li>
-            <li id="18"><img src="img/delhi.png" alt="Delhi"/></li>
-            <li id="19"><img src="img/Doha.png" alt="Doha"/></li>
-            <li id="20"><img src="img/me.png" alt="chirag"/></li>
+             <li id="18"><img src="img/steve.png" alt="Stephen Colbert"/></li>
+            
+            <li id="19"><img src="img/rma.png" alt="Real Madrid"/></li>
+           
+            
+            <li id="20"><img src="img/mitch.png" alt="Mitch Albom"/></li>
+            
+            
+            
           </ul>
         </div>
       <div class='aboutmetext'>
 
-          <p>Hi! My Name is <span id="rest20" class="aboutlink">Chirag</span>.<br>It is pronounced "Chirag" and spelled something like this :<br>
+          <p>Hi! My Name is <span id="rest1" class="aboutlink">Chirag</span>.<br>It is pronounced "Chirag" and spelled something like this :<br>
           <br>
 
-          <div class="syn">"C" as in "Kool"</div> 
-          <div class="syn">"H" as in "Handsum"</div>
-          <div class="syn">"I" as in "Entelligent"</div> 
-          <div class="syn">"R" as in "Responsibull"</div> 
-          <div class="syn">"A" as in "Owesome"</div> 
-          <div class="syn">"G" as in "Grammer & Spelings Proficiency"</div>
+          <div class="syn">"<span class="highlight">C</span>" as in "Kool"</div> 
+          <div class="syn">"<span class="highlight">H</span>" as in "Handsum"</div>
+          <div class="syn">"<span class="highlight">I</span>" as in "Entelligent"</div> 
+          <div class="syn">"<span class="highlight">R</span>" as in "Responsibull"</div> 
+          <div class="syn">"<span class="highlight">A</span>" as in "Owesome"</div> 
+          <div class="syn">"<span class="highlight">G</span>" as in "Grammer & Spelings Proficiency"</div>
           
-          <br>Please Note: Not to be confused with Chirag Delhi, Chirag Computers, Chirag Constructions, Chirag(1969 film), Chirag NGO for Rural Development, Chirag United F.C, Chirag Gupta or Ryan Gosling.
+          <br><span class="highlight">PLEASE NOTE : </span>Not to be confused with Chirag Delhi, Chirag Computers, Chirag Constructions, Chirag(1969 film), Chirag NGO for Rural Development, Chirag United F.C, Chirag Gupta or Ryan Gosling.
           </p>
           <br>
-          <div>WHERE I LIVE : <span id="rest18" class="aboutlink">Delhi</span>,<span id="rest19" class="aboutlink"> Doha</span>,<span id="rest14" class="aboutlink"> Mandi</span>,<span id="rest4" class="aboutlink"> Wonderland</span></div>
-          <div>MOTHER TONGUE : <span id="rest12" class="aboutlink">Python </span></div>
-          <div>WHAT I LISTEN TO: <span id="rest1" class="aboutlink">Coldplay</span>, <span id="rest2" class="aboutlink">The Arctic Monkeys </span>, <span id="rest13" class="aboutlink">One Republic </span></div>
-          <div>WHAT I DO : <span id="rest9" class="aboutlink">UI/UX Development</span>, <span id="rest11" class="aboutlink">Web Development</span>, <span id="rest10" class="aboutlink">Designing</span>, <span id="rest15" class="aboutlink">Poetry </span>, <span id="rest8" class="aboutlink">Oil Painting </span></div>
-          <div>WHAT I WATCH : <span id="rest3" class="aboutlink">Game of Thrones</span>, <span id="rest7" class="aboutlink">Breaking Bad</span>, <span id="rest17" class="aboutlink">Sherlock</span>, <span id="rest6" class="aboutlink">Stephen Colbert </span> </div>
-          <div>ALLEGIANCES: <span id="rest5" class="aboutlink">Real Madrid </span></div>
+          <div><span class="highlight">WHERE I LIVE : </span><span id="rest2" class="aboutlink">Delhi</span>,<span id="rest3" class="aboutlink"> Doha</span>,<span id="rest4" class="aboutlink"> Mandi</span>,<span id="rest5" class="aboutlink"> Wonderland</span></div>
+          <div><span class="highlight">MOTHER TONGUE : </span><span id="rest6" class="aboutlink">Python </span></div>
+          <div><span class="highlight">WHAT I LISTEN TO: </span><span id="rest7" class="aboutlink">Coldplay</span>, <span id="rest8" class="aboutlink">The Arctic Monkeys </span>, <span id="rest9" class="aboutlink">One Republic </span></div>
+          <div><span class="highlight">WHAT I DO : </span><span id="rest10" class="aboutlink">UI/UX Development</span>, <span id="rest11" class="aboutlink">Web Development</span>, <span id="rest12" class="aboutlink">Designing</span>, <span id="rest13" class="aboutlink">Poetry </span>, <span id="rest14" class="aboutlink">Oil Painting </span></div>
+          <div><span class="highlight">WHAT I WATCH : </span><span id="rest15" class="aboutlink">Game of Thrones</span>, <span id="rest16" class="aboutlink">Breaking Bad</span>, <span id="rest17" class="aboutlink">Sherlock</span>, <span id="rest18" class="aboutlink">Stephen Colbert </span> </div>
+          <div><span class="highlight">ALLEGIANCES: </span><span id="rest19" class="aboutlink">Real Madrid </span></div>
                           
-          <div>FAVOURITE AUTHOR: <span id="rest16" class="aboutlink">Mitch Albom </span></div>
+          <div><span class="highlight">FAVOURITE AUTHOR: </span><span id="rest20" class="aboutlink">Mitch Albom </span></div>
           
                
 
-      <div class="resume">
-          
-          <button class="button button--resumebutton button--border-thick button--text-upper button--size-s">RESUME</button>
-        </div>
-        
-      
+      	
+
+    	</div>
+    </div>
+            
         <div class="poppy">
-          
+        	<p class="text">Want to know more about me ?</p>
           <button class="button button--poppybutton button--border-thick button--inverted button--text-upper button--size-s" onclick="javascript:openDialog();">CONTACT ME</button>
         </div>
-      
+
+        <div class="buttons-div">
+    	<div class="resume">
+    		<p class="text">Like what you see ?</p>
+          <button class="button button--resumebutton button--border-thick button--text-upper button--size-s">MY RESUME</button>
+        </div>
+    	
     </div>
-    </div>
-    <br/>
-    <br/>
 
     <div id="potato9gag">
       <div id="potatotext">
@@ -315,9 +354,29 @@
         <button id='modalinside' onclick="javascript:closeDialog();" class="button button--rayen button--border-medium button--text-thin button--size-l button--inverted" data-text="SUBMIT"><span>SUBMIT</span></button>
       </div>      
     </aside>
+    <br>
+    <br>
+    <br>
     </div>
-    <div class="footer">HI MUM, I'M A FOOTER!</div>
+    <br>
+    <br>
+    <br>
+    <div>
+    	<hr class="style15"><p class="follow-me">FOLLOW ME</p><hr class="style14">
+    </div>
+    
+    
+    <div class="icons-bar">
+	  <a href="https://www.facebook.com/SerChiragVashist" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+	  <a href="https://plus.google.com/104455459059174942116" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+	  <a href="https://plus.google.com/104455459059174942116" class="icon-button linkedin"><i class="icon-linkedin"></i><span></span></a>
+	  <a href="https://twitter.com/ShivaStagRich" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+	</div>
+
+	<p class="copyright">&copy; 2017 ChiragVashist.com<p>
+    
   <script type="text/javascript">
+
   	$(document).ready(function($) {
 
   $(window).on('scroll', function() {
@@ -339,11 +398,21 @@
 
 });
   </script>
-  <script type="text/javascript" src="js/potato.js"></script>    
+  <script type="text/javascript" src="js/potato.js"></script>
+  
   <script type="text/javascript" src="js/modalwa.js"></script>
   <script type="text/javascript" src="js/juicy.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="jquery.countup.js"></script>
+ 
   <script src="js/aboutme.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script>
+  	$('.counter').countUp();
+  	
+  </script>
+  
+  
   
   
 </body>
