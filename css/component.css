@@ -1,0 +1,189 @@
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* General styles and layout */
+
+#potato9gag{
+	padding-left: 10px;
+}
+
+.blockquotediv{
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.potatoquote{
+    font-family: 'Roboto Condensed', sans-serif;;
+    font-weight: 100;
+    letter-spacing: 0.1px;
+    line-height: 100px;
+    font-size: 145px;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+}
+
+#potatocontainer{
+	margin-top: 60px
+	margin-bottom: 60px;
+	right:0px;
+
+}
+
+#potatosection{
+	margin-top: 130px;
+    position: static;
+    width: 40%;
+    float : left;
+    height: 100%;
+  }
+
+
+#potatotext{
+	margin-top: 130px;
+    float : left;
+	width: 57%;
+}
+
+  svg{
+    display: block;
+    margin: auto;
+  }
+
+.bakar{
+	height: 1000px;
+}
+
+.containerp{
+	margin-top: 50px;
+}
+
+.container {
+
+
+	overflow: hidden;
+	/* we don't want the pseudo-elements sticking out */
+}
+
+.container svg {
+	display: block;
+}
+
+#pseudo1 {
+	margin-top: 150px;
+	background-image: url('../images/parallax.jpg');
+}
+
+#pseudo2 {
+	margin-bottom: 0px;
+	background-image: url('../images/parallax.jpg');
+}
+
+section {
+	position: relative;
+	padding: 5em ;
+	padding-top: 10em;
+	padding-bottom: 10em;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+}
+
+section h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.8em;
+	font-weight: 400;
+}
+
+section p {
+	color: rgba(0,0,0,.3);
+	font-size: 1.3em;
+	line-height: 1.001;
+}
+
+.text:first-child {
+	text-align: right;
+}
+
+.text:nth-child(2) {
+	text-align: left;
+}
+
+.col-2 .column {
+	width: 49%;
+}
+
+.col-3 .column {
+	padding: 0 1%;
+	width: 33%;
+	text-align: center;
+}
+
+
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.icon {
+	display: block;
+	margin: 30px;
+	width: 12em;
+	height: 12em;
+	border-radius: 50%;
+	background: rgba(0,0,0,0.45);
+	color: #fff;
+	text-align: center;
+	font-size: 8em;
+	line-height: 2em;
+	margin: 0 auto;
+	padding-top: 20%;
+	padding-bottom: 30%;
+}
+
+section.color h2 {
+	color: #fff;
+}
+
+.color {
+	background: #3498db;
+}
+
+/*** Individual section styles and separators ***/
+
+/* Common style for pseudo-elements */
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+
+/* Big Triangle */
+svg#bigTriangleColor {
+	pointer-events: none;
+}
+
+#bigTriangleColor path {
+	fill: #fff;
+	stroke: #000;
+	stroke-width: 0 ;
+}
+
+svg#bigTriangleColor2 {
+	pointer-events: none;
+}
+
+#bigTriangleColor2 path {
+	fill: #fff;
+	stroke: #000;
+	stroke-width: 0;
+}
+
+

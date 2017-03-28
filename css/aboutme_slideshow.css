@@ -1,0 +1,73 @@
+/* 4 classes: navInLeft, navInRight, navOutLeft, navOutRight */
+
+/*****************************************/
+/* Slide forward */
+/*****************************************/
+
+.fxSlideForward .navOutNext {
+	-webkit-transform-origin: -50% 50%;
+	transform-origin: -50% 50%;
+	-webkit-animation: scaleDown 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleDown 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.fxSlideForward .navInNext {
+	-webkit-transform-origin: 150% 50%;
+	transform-origin: 150% 50%;
+	-webkit-animation: scaleUp 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleUp 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.fxSlideForward .navOutPrev {
+	-webkit-transform-origin: 150% 50%;
+	transform-origin: 150% 50%;
+	-webkit-animation: scaleDown 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleDown 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.fxSlideForward .navInPrev {
+	-webkit-transform-origin: -50% 50%;
+	transform-origin: -50% 50%;
+	-webkit-animation: scaleUp 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+	animation: scaleUp 0.5s forwards cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+@-webkit-keyframes scaleUp {
+	from {
+		-webkit-transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes scaleUp {
+	from {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes scaleDown {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: scale(0);
+		opacity: 0;
+	}
+}
+
+@keyframes scaleDown {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		-webkit-transform: scale(0);
+		transform: scale(0);
+		opacity: 0;
+	}
+}
+

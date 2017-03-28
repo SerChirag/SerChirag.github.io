@@ -1,0 +1,148 @@
+@font-face {
+	font-family: 'fontawesome';
+	src:url('../fonts/fontawesome/fontawesome.eot?-ulzwqn');
+	src:url('../fonts/fontawesome/fontawesome.eot?#iefix-ulzwqn') format('embedded-opentype'),
+		url('../fonts/fontawesome/fontawesome.woff?-ulzwqn') format('woff'),
+		url('../fonts/fontawesome/fontawesome.ttf?-ulzwqn') format('truetype'),
+		url('../fonts/fontawesome/fontawesome.svg?-ulzwqn#fontawesome') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/app */
+
+
+.buttons-div{
+	margin: 0;
+	width: 100%;
+}
+
+.deco-cont{
+	left: 0;
+}
+
+.text{
+	font-family: 'Roboto', sans-serif;;
+    background: #fff;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 15px;
+    color: #ff0000;
+
+}
+
+
+.syn{
+	margin-left: 15%;
+}
+
+.aboutmetext{
+	position: static;
+	float: left;
+	padding-top: 40px;
+	padding-right: 140px;
+	padding-left: 40px;
+	width: 60%;
+
+	height : 50%;
+	font-size: 100%;
+}
+
+.aboutmelink{
+	font-family: 'Roboto', sans-serif;;
+    background: #fff;
+    letter-spacing: 1px;
+    font-weight: 200;
+    font-size: 15px;
+    color: #fff;
+}
+
+.aboutlink{
+	color: #888;
+	font-weight: 400;
+}
+
+
+.containera {
+	padding-bottom: 100px;
+}
+
+
+
+
+/* This is the style for the dummy image slider. Animations are in fx[type].css */
+
+.component {
+	margin-top: 120px;
+	position: static;
+    width: 40%;
+    
+}
+
+.highlight{
+	
+	font-weight: 800;
+		
+	text-transform: uppercase;
+	color: #000;
+}
+
+.component-transparent {
+	position: static;
+	padding-left: 140px;
+	padding-right: 20px;
+	float: left;
+	height: 50%;
+
+}
+
+.component > ul {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+
+.component-transparent > ul {
+	width: 100%;
+}
+
+.component li {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	opacity: 0;
+	z-index: 999;
+}
+
+
+.component .current {
+	opacity: 1;
+	pointer-events: auto;
+	z-index: 1000;
+}
+
+.component li img {
+	display: block;
+	position: relative;
+	
+	width: 100%;
+
+	height: auto;
+	vertical-align: center;
+
+}
+
+
+a.prev::before {
+	content: "\e601";
+}
+
+a.next::before {
+	content: "\e600";
+}
+
