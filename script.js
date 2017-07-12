@@ -16,8 +16,13 @@ $('#toTop a').click(function () {
   return false;
 });
 
+
+window.onload = function(){
+  alert("Chirag")
+};
+
 $(document).ready(function(){
-  alert("Chirag");
+
   setTimeout(function(){
     $("#babe").focus(function(){
       setTimeout(function(){
