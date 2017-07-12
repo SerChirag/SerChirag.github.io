@@ -17,6 +17,7 @@ $('#toTop a').click(function () {
 });
 
 $(document).ready(function(){
+  alert("Chirag");
   setTimeout(function(){
     $("#babe").focus(function(){
       setTimeout(function(){
