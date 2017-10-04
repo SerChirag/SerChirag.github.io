@@ -1,5 +1,4 @@
 
-
 .wrapper {
   
   transform-origin: center bottom 0px;
@@ -19,7 +18,7 @@ body.tight .wrapper {
 
 /* line 9, ../scss/_mixins.scss */
 ::-webkit-scrollbar-thumb {
-  background: #333;
+  background: #000;
 }
 
 /* line 13, ../scss/_mixins.scss */
@@ -76,7 +75,6 @@ body.tight .wrapper {
 
 .portion {
   
-  background-image:  url('http://p1.pichost.me/640/60/1842352.jpg');
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;

@@ -18,10 +18,31 @@ $('#toTop a').click(function () {
 
 
 window.onload = function(){
-  alert("Chirag")
+
+  $('#preloader').addClass('animated fadeOut')
+  $('body').css({'overflow': 'scroll'});
+  $('body').css({'background-color': '#fff'});
+  $('#main_page').css({'visibility': 'visible'});
+  $('#new_header').css({'visibility': 'visible'});
+  $('#footie').css({'visibility': 'visible'});  
+  $('#main_page').addClass('animated fadeIn');
+  $('#footie').addClass('animated fadeIn');
+  //$('#preloader').removeClass('animated fadeOut');
+
+  setTimeout(function(){
+    
+    $('#main_page').removeClass('animated fadeIn');
+    $('#footie').removeClass('animated fadeIn');
+    $('#preloader').remove();
+    //
+  },1000);
 };
 
 $(document).ready(function(){
+
+  
+  
+
 
   setTimeout(function(){
     $("#babe").focus(function(){

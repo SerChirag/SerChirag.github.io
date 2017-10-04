@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/404.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/input_search.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src = "script.js"></script>
+<script type="text/javascript" src="https://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+<style type="text/css">
+  body{
+    overflow: hidden;
+  }
+
+  #astroboy{
+    float: right;
+    margin-left: 55%;
+    margin-top: -25%;
+    height: 90%;
+    -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+    -webkit-animation: float 6s ease-in-out infinite;
+          animation: float 6s ease-in-out infinite;
+  }
+
+  @-webkit-keyframes float {
+  0% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+
+
+</style>
+<body>
+<header class="daddy_head">
+  <nav id='bossnav'>
+    <div id='head'>
+      <span id='navtext' class="movetext">Chirag Vashist</span>
+      <style type="text/css">
+        #navtext{
+          top: -30px;
+        }
+      </style>
+      <img id="navimg" src="img/logo.svg">
+      <a href="#portion1" id="linknav1" class='linknav'>HOME</a>
+      <a href="#portion2" id="linknav2" class='linknav' >CODE</a>
+      <a href="#portion3" id="linknav3" class='linknav' >CREATE</a>
+      <a href="#portion4" id="linknav4" class='linknav' >COMMUNICATE</a>
+      <form id="inputsearch" style="display:inline!important;">
+        <input id="babe" type="search" placeholder="Search">
+      </form>
+      
+    </div>
+  </nav>
+</header>
+	<div id="layout" class="stars">
+	 
+	 <div id="ShootingStarParams"></div>
+	
+	 <div id="quote">
+	 	<p id="upper_Houston">
+	 		Houston,
+	 	</p>
+
+	 	<p>
+	 		We have a problem.
+	 	</p>
+	 </div>
+	 <div class="text_404" data-text="404">404</div>
+   
+   <img id="astroboy" src="img/vidhayak.png">
+	 
+</div>
+<script type="text/javascript">
+	(function() {
+ 
+
+  ShootingStar = function(id) {
+    this.n = 0;
+    this.m = 0;
+    this.defaultOptions = {
+      velocity: 8,
+      starSize: 10,
+      life: 300,
+      beamSize: 400,
+      dir: -1
+    };
+    this.options = {};
+    id = (typeof id != "undefined") ? id : "";
+    this.capa = ($(id).lenght > 0) ? "body" : id;
+    this.wW = $(this.capa).innerWidth();
+    this.hW = $(this.capa).innerHeight();
+  };
+
+  ShootingStar.prototype.addBeamPart = function(x, y) {
+    this.n++;
+    var name = this.getRandom(100, 1);
+    $("#star" + name).remove();
+    $(this.capa).append("<div id='star" + name + "'></div>");
+    $("#star" + name).append("<div id='haz" + this.n + "' class='haz' style='position:absolute; color:#FF0; width:10px; height:10px; font-weight:bold; font-size:" + this.options.starSize + "px'>·</div>");
+    if (this.n > 1) $("#haz" + (this.n - 1)).css({
+      color: "rgba(255,255,255,0.5)"
+    });
+    $("#haz" + this.n).css({
+      top: y + this.n,
+      left: x + (this.n * this.options.dir)
+    });
+  }
+
+  ShootingStar.prototype.delTrozoHaz = function() {
+    this.m++;
+    $("#haz" + this.m).animate({
+      opacity: 0
+    }, 75);
+    if (this.m >= this.options.beamSize) {
+      $("#ShootingStarParams").fadeOut("slow");
+    }
+  }
+
+  ShootingStar.prototype.getRandom = function(max, min) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  ShootingStar.prototype.toType = function(obj) {
+    if (typeof obj === "undefined") {
+      return "undefined"; /* consider: typeof null === object */
+    }
+    if (obj === null) {
+      return "null";
+    }
+    var type = Object.prototype.toString.call(obj).match(/^\[object\s(.*)\]$/)[1] || '';
+    switch (type) {
+      case 'Number':
+        if (isNaN(obj)) {
+          return "nan";
+        } else {
+          return "number";
+        }
+      case 'String':
+      case 'Boolean':
+      case 'Array':
+      case 'Date':
+      case 'RegExp':
+      case 'Function':
+        return type.toLowerCase();
+    }
+    if (typeof obj === "object") {
+      return "object";
+    }
+    return undefined;
+  }
+
+  ShootingStar.prototype.launchStar = function(options) {
+    if (this.toType(options) != "object") {
+      options = {};
+    }
+    this.options = $.extend({}, this.defaultOptions, options);
+    this.n = 0;
+    this.m = 0;
+    var i = 0,
+      l = this.options.beamSize,
+      x = this.getRandom(this.wW - this.options.beamSize - 100, 100),
+      y = this.getRandom(this.hW - this.options.beamSize - 100, 100),
+      self = this;
+    for (; i < l; i++) {
+      setTimeout(function() {
+        self.addBeamPart(x, y);
+      }, self.options.life + (i * self.options.velocity));
+    }
+    for (i = 0; i < l; i++) {
+      setTimeout(function() {
+        self.delTrozoHaz()
+      }, self.options.beamSize + (i * self.options.velocity));
+    }
+  }
+
+  ShootingStar.prototype.launch = function(everyTime) {
+    if (this.toType(everyTime) != "number") {
+      everyTime = 10;
+    }
+    everyTime = everyTime * 1000;
+    this.launchStar();
+    var self = this;
+    setInterval(function() {
+      var options = {
+        dir: (self.getRandom(1, 0)) ? 1 : -1,
+        life: self.getRandom(600, 100),
+        beamSize: self.getRandom(700, 400),
+        velocity: self.getRandom(20, 4)
+      }
+      self.launchStar(options);
+    }, everyTime);
+  }
+
+})();
+
+$(document).ready(function() {
+  var shootingStarObj = new ShootingStar("body");
+  shootingStarObj.launch();
+});
+</script>
+<script type="text/javascript"></script>
+</body>
+</html>
