@@ -1,0 +1,47 @@
+body {
+  padding:0; margin:0;
+}
+#layout { 
+  color:#FFF; height:600px; width:100%; height:100%; 
+}
+.stars {
+  z-index: 0; position: absolute;
+  background-image: url(   http://www.14denoviembre.es/img/hori.png ), url( http://www.14denoviembre.es/img/stars_5.png );
+  background-repeat: repeat-x,repeat-x repeat-y;
+  transform:translate3D(0em, 0em, 0);
+  animation: stars 21s ease; 
+  transform-style: preserve-3d;
+}
+
+/*body, html { 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}*/
+
+#astro{
+	margin-top: 0;
+}
+
+#upper_Houston{
+
+  margin-bottom: 5%;
+}
+
+#quote{
+  float: left;
+	margin-top: 10%;
+	margin-left: 100px;
+    float : left;
+	width: 57%;
+	font-family: 'Bangers', sans-serif;;
+    font-weight: 100;
+    letter-spacing: 0.1px;
+    line-height: 120px;
+    font-size: 130px;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+p{
+  margin: 0;
+}
