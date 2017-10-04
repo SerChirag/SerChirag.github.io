@@ -52,8 +52,8 @@
 .google-plus span {
   background-color: #db5a3c;
 }
-.github span {
-  background-color: #333 ;
+.linkedin span {
+  background-color: #0077b5 ;
 }
 
 
@@ -82,10 +82,10 @@
 .icon-button .icon-google-plus {
   color: #db5a3c;
 }
-.icon-button .icon-github {
-  color: #333;
+.icon-button .icon-linkedin {
+  color: #0077b5;
 }
-.icon-button:hover .icon-github,
+.icon-button:hover .icon-linkedin,
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
 .icon-button:hover .icon-google-plus {

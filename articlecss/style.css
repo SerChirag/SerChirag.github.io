@@ -1,0 +1,161 @@
+.wrapper {
+  
+  transform-origin: center bottom 0px;
+  transition: all 0.7s ease 0s;
+  box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.2);
+}
+
+body.tight .wrapper {
+  transform: translateY(-30px) scale(0.95);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 3px;
+}
+
+/* line 9, ../scss/_mixins.scss */
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+/* line 13, ../scss/_mixins.scss */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#head{
+  background-color: none;
+  min-height: 50px;
+  max-height: 50px;
+}
+
+
+#navtext{
+  display: none;
+}
+
+
+#head.active {
+    background: #000;
+}
+
+
+#blank {
+    background: #000;
+}
+
+
+#bossnav {
+  position: !important; z-index: 9999 !important;
+  text-align: right;
+  background: none;
+  color: white;
+  font-size: 1em;
+  position: fixed;
+  width: 100%;
+}
+
+.linknav {
+  color: #999999;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8em 1em .5em;
+
+}
+.small {
+  padding: .5em 1em;
+}
+.linknav:hover {
+  color: #fff;
+  transition: 0.7s ease-in-out
+}
+
+.active {
+  color: #FF5252;
+}
+
+.portion {
+  
+  background-image:  url('http://p1.pichost.me/640/60/1842352.jpg');
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+}
+.portion.two {
+  
+  position: static;
+  background-image: url('images/parallax.jpg');
+  
+}
+.portion h2 {
+  position: static;
+  color: white;
+  font-weight: normal;
+  font-size: 3em;
+  padding: 2em 0;
+  margin: 0;
+  text-shadow: 0 0 10px black;
+  background: rgba(0,0,0,0.6);
+}
+
+.info {
+  top : 700px;
+  background: #fff;
+  color: #777;
+  padding: 3em 20%;
+}
+
+.button {
+  text-align: center;
+}
+.button a {
+  display: inline-block;
+  border: 2px solid #777;
+  padding: .75em 1.5em;
+  color: #777;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  letter-spacing: .15em;
+  word-spacing: .25em;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+.button a:hover {
+  color: #FFFAF0;
+  background: #777;
+}
+footer.info {
+  color: #FFFAF0;
+  background: #777;
+  padding: 0 auto;
+  text-align: center;
+}
+
+#toTop img {
+  width: 50px;
+}
+#toTop img:hover {
+  cursor: pointer;
+}
+#navimg{
+  position: !important; z-index: 9999 !important;
+  z-index: 1000;
+  height: 5em;
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  transition: all 0.5s linear;
+}
+
+#navtext{
+  position: !important; z-index: 9999 !important;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-weight: bold;
+  transition: all 0.5s ease-in;
+}

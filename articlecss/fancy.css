@@ -1,0 +1,41 @@
+#carly{
+  background-image: white);
+  text-align: center;
+  height: 100%;
+  overflow: hidden;
+}
+.svg-wrapper {
+  display: inline;      
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+    margin: 0 auto;
+  width: 320px;  
+  
+}
+.shape {
+  display: inline;  
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 0px;
+  fill: transparent;
+  stroke: #000;
+  border: 1px solid black;
+  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.text {
+  z-index: 1;
+  font-family: 'Roboto Condensed';
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 8px;
+  color: #000;
+  top: -52px;
+  position: relative;
+}
+.svg-wrapper:hover .shape {
+
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 760;
+}

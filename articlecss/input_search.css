@@ -2,7 +2,7 @@ input {
 	outline: none;
 }
 
-header{
+.daddy_head{
 	font-family: 'Roboto Condensed';
 	font-size: 15px;
 	font-weight: 500;
@@ -29,32 +29,30 @@ input::-webkit-search-cancel-button {
 input[type=search] {
 	background: transparent url(../images/grey.png) no-repeat 0px center;
 	background-size: 20px 20px;
-	margin-right: 10px;
 	border: none;
 	padding: 9px 10px 9px 32px;
 	width: 55px;
+	size: 50;
 	background-color: none;
-
 	-webkit-border-radius: 0em;
 	-moz-border-radius: 0em;
-	border-radius: 0em;
-	
+	border-radius: 0em;	
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	transition: all .5s;
 }
+
+
 input[type=search]:focus {
-	width: 130px;
-	height: 47px;
+	
+	width: 190px;
 	background-color: #fff;	
 	
 }
 
 
 #inputsearch input[type=search] {
-	width: 17px;
-	padding-left: 10px;
-	margin-right: 20px;
+	width: 0px;
 	color: #fff;
 	cursor: pointer;
 	transition: all ease-in 0.789s;
@@ -68,10 +66,11 @@ input[type=search]:focus {
 	width: 170px;
 	padding-left: 30px;
 	margin-right: 130px;
-	margin-bottom: 5px;
+	
 	color: #fff;
 	background: transparent url(../images/search2.png) no-repeat 0px center ;
 	background-size: 20px 20px;
+	
 	filter: grayscale(20%);
 	background-position: static;
 	cursor: auto;
@@ -87,10 +86,11 @@ input[type=search]:focus {
 }
 
 #babe{
+
 	position: relative;
 	font-family: 'Raleway';
 	font-size: 16px;
-	font-weight: 300;
 	line-height: 33px;
+	
 	
 }

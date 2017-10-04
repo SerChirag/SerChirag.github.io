@@ -1,0 +1,139 @@
+.input {
+	color: #000;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	margin: 1em;
+	height: auto;
+	max-width: 1720px;
+	width: calc(100% - 2em);
+	vertical-align: top;
+}
+
+.input__field {
+	position: relative;
+	display: block;
+	float: right;
+	padding: 0.8em;
+	width: 100%;
+	border-style: solid;
+    border-bottom-width: 4px;
+    border-color: #000 ;
+    border-bottom: none;
+	border-radius: 0;
+	background: #f0f0f0;
+	color: #000;
+	font-size:20px;
+	-webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+	outline: none;
+}
+
+.input__label {
+	display: inline-block;
+	font-family: 'Roboto Condensed';
+	font-size: 16px;
+	font-weight: 800;
+	line-height: 32px;
+	letter-spacing: 2px;	
+	text-transform: uppercase;
+
+	padding: 0 1em;
+	width: 100%;
+	color: #000;
+	font-weight: bold;
+	
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.input__label-content {
+	position: relative;
+	display: block;
+	padding: 0.9em 0;
+	width: 100%;
+}
+
+.graphic {
+	position: absolute;
+	top: 0;
+	left: 0;
+	fill: none;
+}
+
+.icon {
+	color: #ddd;
+	font-size: 150%;
+}
+
+/* Individual styles */
+
+/* Haruki *
+
+/* jaime */
+.input--jaime {
+	color: #000;
+	margin: 0.9em;
+}
+
+.input__field--jaime {
+	width: 100%;
+	height: 500%;
+	background: transparent;
+	color: #fff;
+}
+
+.input__label--jaime {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	color: #000;
+	text-align: left;
+	cursor: text;
+}
+
+.input__label-content--jaime {
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.graphic--jaime {
+	-webkit-transform: scale3d(1, -1, 1);
+	transform: scale3d(1, -1, 1);
+	-webkit-transition: stroke-dashoffset 0.3s;
+	transition-timing-function: ease-out;
+	transition: stroke-dashoffset 0.5s;
+	pointer-events: none;
+
+	stroke: #000;
+	stroke-width: 6px;
+	stroke-dasharray: 962;
+	stroke-dashoffset: 558;
+}
+
+.input__field--jaime:focus + .input__label--jaime,
+.input--filled .input__label--jaime {
+	cursor: default;
+	pointer-events: none;
+}
+
+.input__field--jaime:focus + .input__label--jaime .graphic--jaime,
+.input--filled .graphic--jaime {
+	stroke-dashoffset: 0;
+}
+
+.input__field--jaime:focus + .input__label--jaime .input__label-content--jaime,
+.input--filled .input__label-content--jaime {
+	-webkit-transform: scale3d(0.81, 0.81, 1) translate3d(-0.5em, -2.9em, 0);
+	transform: scale3d(0.81, 0.81, 1) translate3d(-0.5em, -2.9em, 0);
+}
